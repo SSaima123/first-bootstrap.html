@@ -1,0 +1,16 @@
+<html>
+    <title> first Bootstrap</title>
+     <head>
+        link rel="stylesheet" href="C:\Users\nadee\Desktop\bootstrap-5.2.0-beta1-dist\css\bootstrap.min.css">
+        <link rel="stylesheet" href="C:\Users\nadee\Desktop\bootstrap-5.2.0-beta1-dist\js\bootstrap.min.js">
+        <link rel="stylesheet" href="style.css">
+        </head>
+        
+        <body>
+            <div class=" container" id="blue">
+                <div class="row" id="red"></div>
+
+            </div>
+
+        </body>
+ </html>

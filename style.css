@@ -1,0 +1,20 @@
+.btn-primary{
+    background:rgb(23, 0, 128);
+    border-radius: 20px;
+    }
+
+.btn-secondary{
+    background:red;
+    border-radius:30px;
+    }
+    .btn-warning{
+        background-color: aquamarine;
+        border-radius: 40px;
+        box-shadow: gray;
+        
+    }
+    .btn-group{
+        background-color: brown;
+        border-radius:40px;
+        box-shadow:rgb(64, 40, 151);
+        }
