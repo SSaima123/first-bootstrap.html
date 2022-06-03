@@ -1,62 +1,67 @@
+
 <html>
-   <head>
-       <script>
-           function datavalidation(){
-           var uname = document.getElementById('un').value;
-              alert (" Enter username" )
 
-           var password = document.getElementById('pw').value;
-              alert ("Enter password")
+<head>
+    <script>
 
-           var cpassword = document.getElementById('cpw').value;
-              alert ("Enter confirm password!")
-   
-         if (uname== ""){
-             alert ("Please enter your username");
+        // FUNCTION WILL RUN AFTER USER ENTERS REGISTER BUTTON
+        function dataValidation() {
+           
+            var uname = document.getElementById('un').value; // retrieve uname value
+            
+            alert(uname)
 
-         } else {
-             alert ("username");
-         }
-         if( password == cpassword){
-             alret ("password and confirm password are same");
+            var password = document.getElementById('pw').value;
+           alert("Enter password")
 
-         } else {
-             alert("password and confirm password are not same");
+            var cpassword = document.getElementById('cpw').value;
+            alert("Enter confirm password!")
 
-         }
+            if (uname == "") {
+                alert("No username detected. Please enter your username: ");
+
+            } else {
+                alert("Username accepted and fit all conditions.");
+            }
+            // check similarity between username and password
+            // DO NOT allow password as username
+
+            if (password == cpassword) {
+                alret("password and confirm password are same");
+
+            } else {
+                alert("password and confirm password are not same");
+
+            }
         }
-           </script>
-    </head>
-         <form>
-        
-           <body align="Center">
-                <H1> Registration Form </H1>
-                <form align="center">
-                    <div>
-                        <label style= "font-size:30px;">Enter username</label>;
-                        <input id="un" name="username" type="text"/>
+    </script>
+</head>
+<form>
 
-                    </div>
-                    <div>
-                        <label> Enter passowrd</label>
-                        <input id="pw" type="password" placeholder="password"/>
+    <body align="Center">
+        <H1> Registration Form </H1>
+        <form align="center">
+            <div>
+                <label style="font-size:30px;">Enter username</label>;
+                <input id="un" name="username" type="text" />
 
-                    </div>
-                    <div>
-                        <label> Enter confirm password</label>
-                        <input id="cpw" type="password" placeholder="Confirm password"/>
-                    </div>
-                    If already registered <a href="login.html">Click</a> to Login
-                        <button type="button" onclick="validateData();">Registration</button>
-                        
-                    </div>            
+            </div>
+            <div>
+                <label> Enter password</label>
+                <input id="pw" type="password" placeholder="password" />
 
-            </body>
-        
-        </form>
-</html> 
-        
+            </div>
+            <div>
+                <label> Enter confirm password</label>
+                <input id="cpw" type="password" placeholder="Confirm password" />
+            </div>
+            If already registered <a href="login.html">Click</a> to Login
+            <button type="button" onclick="dataValidation();">Registration</button>
 
+            </div>
 
+    </body>
 
-         
+</form>
+
+</html>
