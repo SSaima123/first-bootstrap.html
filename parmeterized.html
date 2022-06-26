@@ -1,24 +1,20 @@
 <html>
    <head>   
-      <script>
+        <script>
         function studentInfo(sname,age){
-        document.write("Student's"+ sname+ age+"is right for enrollment")
-        enrolStd();
-    }
-
-        function enrolStd(){
-        if(sname = "Alex")
-        document.write("Student's" + sname+ age+ "is not right for Enrolment")
-        return studentInfo();
-
-    }
+          document.write("Student's"+ sname+ age+"is right for enrollment")
+          enrolStd(sname);
+ }
+         function enrolStd(){
+          if(sname != "Alex")
+             document.write("Student's" + sname+  "is not right for Enrolment")
+        //return studentInfo();
+}
       </script>
-      </head>
-    <body>
-      
-          <h1> Student enrollment Information</h1>
-         <input type="button" onclick="studentInfo('ALex',8)" value=" Enrollment">
-
-     </body>
+   </head>
+        <body>
+             <h1> Student enrollment Information</h1>
+             <input type="button" onclick="studentInfo('ALex',8)" value=" Enrollment"
+        </body>
    
 </html>
