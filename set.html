@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            let subjects = new Set();
+
+            let firstS = {name:"Math"};
+            let secondS = {name:"English"};
+            let thirdS = {name:"Science"};
+            let forthS = {name: "Physics"};
+
+            subjects.add(firstS);
+            subjects.add(secondS);
+            subjects.add(thirdS);
+            subjects.add(forthS);
+
+            alert(subjects.size);
+            subjects.add("bio");
+            //let fifthS = {name:"Bio"};
+            //subjects.add(FifthyS);
+            alert(subjects.size);
+           
+            subjects.delete("bio");
+            alert(subjects.size);
+             
+            subjects.clear;
+            alert(subjects.size);
+
+            
+        </script>
+    </head>
+    <body>
+        <h1> Set in javascript</h1>
+    </body>
+</html>
