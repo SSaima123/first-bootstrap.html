@@ -1,0 +1,33 @@
+<style>
+
+.school{
+    font-size: 20px;
+    padding:50px;
+    text-align: center;
+    color: rgb(0, 255, 204);
+    background-color:purple;
+    
+    
+    }
+
+    .junior{
+    font-size: 20px;
+    padding:50px;
+    text-align: center;
+    color: aqua;
+    background-color:blue;
+    height:200px ;
+        
+    }
+    
+    .senior{
+    background-color: pink;
+    color:black;
+    text-align: center;
+    box-shadow: gray;
+    padding: 50px;
+    height: 200px;
+    
+    }
+    
+</style>
