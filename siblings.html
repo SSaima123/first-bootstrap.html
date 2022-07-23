@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <style>
+        .school{
+            font-size: 20px;
+            padding:50px;
+            border: 10px;
+            text-align: center;
+            color: rgb(0, 255, 204);
+            background-color:purple;
+            }
+        .junior{
+            font-size: 20px;
+            border: 10px;
+            padding:40px;
+            text-align: center;
+            color: aqua;
+            background-color:blue;
+            height:200px ;
+            }
+        .senior{
+            background-color: pink;
+            color:black;
+            border: 10px;
+            text-align: center;
+            padding: 40px;
+            height: 200px;
+            }
+       </style>
+              <script src="./Jquery-3.5.1.min.js/jquery-3.5.1.min.js"></script>
+               <script>
+                    $(document).ready(function(){
+                    $("button").click(function(){
+                    //$(".grade-1").siblings().css("color","red");// this works forward in siblings//
+                    //$(".grade-1").next().css("color","red"); 
+                    //$(".grade-4").nextAll().css("color","red"); 
+                    //$("p").nextUntil(".junior").css("color","red");// this works reverse in sibling tree//
+                    $(".grade-3").prev().css("color","red");
+                    $("p").prevUntil("grade-3").css("color","red");
+                });    
+
+            });
+        </script>
+        </head>
+            <body>
+
+                <div class="school">
+                      <h1>Total classes in the School</h1>
+                     
+                    <div class="junior"> 
+                          <h1>Junior classes in the school</h1>
+                        <p class="grade-1">Student of grade-1</p>
+                          <p class="grade-2">Student of grade-2</p>
+                           <p class="grade-3">Student of grade-3</p>
+                            
+                    </div>
+
+                    <div class="senior">
+                            <h1>Senior classes in the school</h1>
+                        <p class="grade-4">Student of grade-4</p>
+                         <p class="grade-5">Student of grade-5</p>
+                          <p class="grade-6">Student of grade-6</p>
+                    </div>
+                </div>
+                             <button>Click this Button </button>
+                
+            </body>                      
+        
+</html>
