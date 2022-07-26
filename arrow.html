@@ -1,20 +1,17 @@
 <html>
    <head>   
       <script>
-        let studentInfo = (fname,lname)=> fname + lname;
-          
-         
-        document.write( fname+ lname);
+        let studentInfo =(fname,lname)=> {
+        document.write(fname+lname);
+        //console.log (fname,lname);
         
-    
+    }
+      
        </script>
    </head>
-    
-         <h1> Student's Information</h1>
+        <body>
+            <h1> Student's Information</h1>
+        <input type="button" onclick="studentInfo('John','Adam')" value = "Enrollment">
 
-     <body>
-        <input type="button" onclick="studentInfo()" value =" Enrollment">
-
-     </body>
-     
+        </body
 </html>
