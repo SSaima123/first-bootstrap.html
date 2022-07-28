@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./style-3.css"> 
+            <script src="./Jquery-3.5.1.min.js/jquery-3.5.1.min.js"></script>
+        <script>
+      $(document).ready (function(){
+        $("button").click(function(){
+            $("h1").hide(2000, function(){
+                alert("this will hide after 2 seconds!")
+
+            });
+        });
+      });
+        </script>
+
+    </head>
+    <body>
+        <h1> This will hide after 2 seconds</h1>
+        <button>Click</button>
+    </body>
+    </html>
